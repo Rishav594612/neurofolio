@@ -1,40 +1,73 @@
-# neurofolio
-AI-powered portfolio assistant using Groq
-# 🧠 NeuroFolio – Your AI-Powered Portfolio Assistant
+# 🧠 NeuroFolio
 
-NeuroFolio is a smart, interactive portfolio assistant built with cutting-edge LLM technology (Groq + LLaMA3). It helps developers and creators generate intelligent project summaries, translate them into multiple languages, analyze images, chat with AI in various tones, and export insights — all in one clean dashboard.
+**NeuroFolio** is an AI-enhanced personal portfolio that revolutionizes the way professionals showcase their projects. It dynamically generates engaging project summaries using LLMs, adapts content based on audience preferences, and allows recruiters to interact with your portfolio in a personal and conversational way.
 
 ## 🚀 Features
 
-- ✨ **Auto Project Summarization** – Generate crisp, intelligent summaries using LLaMA3.
-- 🌍 **Multilingual Translation** – Translate summaries into different languages instantly.
-- 🎤 **Voice Input** – Speak your prompts using built-in speech recognition.
-- 🖼️ **Image Analyzer** – Upload images and get context-aware descriptions.
-- 🤖 **AI Chat Assistant** – Ask questions, simulate interviews, and talk in different personas.
-- 📄 **PDF Export** – Export your project summary as a clean, downloadable PDF.
-- 💬 **Save & Load Chats** – Save conversations or reload them later for future reference.
+- **🧠 AI-Generated Project Summaries:**
+  Each project is enriched with automatically generated descriptions powered by advanced language models.
+
+- **🔄 Real-Time Content Updates:**
+  Your portfolio stays up-to-date with your GitHub commits, blog posts, or any other source.
+
+- **💬 Conversational Portfolio Chatbot:**
+  A friendly AI assistant embedded in your portfolio to answer recruiter or visitor questions.
+
+- **🌍 Multilingual Experience:**
+  Automatically translates your portfolio into multiple languages using Groq for global accessibility.
+
+- **📊 Dynamic Insights & Analytics:**
+  Track visitor engagement, most viewed projects, and chatbot interactions.
+
+- **🔗 Easy Deployment:**
+  Deployable on Vercel, with backend powered by Supabase or Railway. Integrates easily with your GitHub.
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Next.js 14, Tailwind CSS, Framer Motion
-- **Backend**: Groq (LLaMA3), API routes
-- **Tools**: HTML2PDF, Web Speech API, FileReader
+**Frontend**
+- Next.js
+- Tailwind CSS
+- Shadcn/UI & Lucide Icons
+- Recharts
 
-## ⚙️ Getting Started
+**Backend**
+- Supabase (Database & Auth)
+- Railway (Optional backend server)
+- OpenAI / Groq (LLM APIs)
 
-# 1. Clone the repo
+**AI & Automation**
+- LangChain / OnchainKit
+- GPT-4 / Mixtral / LLaMA models
+- Webhooks for GitHub + RSS feeds
+
+## 🧹 Modules
+
+- `DynamicSummary`: Auto-generates project summaries
+- `LangTranslate`: Enables multilingual content
+- `ChatWithMe`: Custom chatbot interface
+- `UpdateListener`: Watches for changes and updates content
+- `InsightPanel`: Recharts dashboard with visitor insights
+
+## ⚙️ Setup
 git clone https://github.com/Rishav594612/neurofolio.git
 cd neurofolio
+pnpm install
+pnpm dev
+```
 
-# 2. Install dependencies
-npm install
+### Environment Variables
+Create a `.env.local` file and add:
+OPENAI_API_KEY=your_key_here
+SUPABASE_URL=your_url
+SUPABASE_ANON_KEY=your_key
+GROQ_API_KEY=your_key
+```
 
-# 3. Start the development server
-npm run dev
-Make sure you add your Groq API key to an .env.local file as:
-GROQ_API_KEY=your_key_here
-📦 Deployment
-Deploy it easily using Vercel, Railway, or any Next.js-compatible platform.
+---
 
-📄 License
-MIT License
+## 🤝 Contributing
+Pull requests are welcome. For major changes, open an issue first to discuss what you’d like to change.
+
+## 📄 License
+[MIT](LICENSE)
+
