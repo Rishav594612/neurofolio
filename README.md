@@ -22,7 +22,6 @@ NeuroFolio is a smart, interactive portfolio assistant built with cutting-edge L
 
 ## ⚙️ Getting Started
 
-```bash
 # 1. Clone the repo
 git clone https://github.com/Rishav594612/neurofolio.git
 cd neurofolio
@@ -32,3 +31,10 @@ npm install
 
 # 3. Start the development server
 npm run dev
+Make sure you add your Groq API key to an .env.local file as:
+GROQ_API_KEY=your_key_here
+📦 Deployment
+Deploy it easily using Vercel, Railway, or any Next.js-compatible platform.
+
+📄 License
+MIT License
